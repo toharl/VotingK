@@ -1,8 +1,8 @@
 import helper
 import datetime
 
-A = helper.load_pickle('A_v1.pickle')#[:3000]
-b = helper.load_pickle('b_v1.pickle')#[:3000]
+A = helper.load_pickle('A.pickle')#[:3000]
+b = helper.load_pickle('b.pickle')#[:3000]
 c = [1]*len(A[0])
 
 from scipy.optimize import linprog
