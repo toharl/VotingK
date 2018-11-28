@@ -50,8 +50,8 @@ def to_set_and_value(A,b,x):
     m = majority(x)
     set0, set1, set2 = to_sets(x)
 
-    b.append(0)
-    A.append(set0)
+    # b.append(0)
+    # A.append(set0)
 
     v1 = 1 if m == 1 else 0
     b.append(v1)

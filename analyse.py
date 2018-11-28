@@ -4,9 +4,9 @@ import scipy.stats
 import numpy as np
 
 
-x1 = helper.load_pickle('x1_cvx.pickle')
-x2 = helper.load_pickle('x2_cvx.pickle')
-x3 = helper.load_pickle('x3_cvx.pickle')
+x1 = helper.load_pickle('x.pickle')
+# x2 = helper.load_pickle('x2_cvx.pickle')
+# x3 = helper.load_pickle('x3_cvx.pickle')
 
 
 import pandas as pd
@@ -60,11 +60,11 @@ for i in members:
 
 
 
-data={'name': names, 'payoff1': x1, 'payoff2': x2, 'payoff3': x3, 'faction': faction, 'took_part': part}
+data={'name': names, 'payoff': x1, 'faction': faction, 'took_part': part}
 
 df = pd.DataFrame.from_dict(data)
 df.to_csv('payoff.csv')
-print("csv has created")
+print("new payoff.csv has created")
 
 print(df)
 
