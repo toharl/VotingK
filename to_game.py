@@ -1,5 +1,5 @@
 
-''' The votes.csv consist of the data as is. votes for each law and each member. 7057 laws X 143 members. values represents:  1 - for the law, 2 - opposed to the law, 0 - didn't attend.
+''' The votes.csv consists of the data as is. votes for each law and each member. 7057 laws X 143 members. values represents:  1 - for the law, 2 - opposed to the law, 0 - didn't attend.
 Here, we would like to convert this data to an input for a cooperative game. That is, sets of players (members) and theirs values.
 
 1. represent as sets: A group is all the members that voted the same. We extracted only groups members that voted 1 or 2 which is for or against the law and ignored the others. each group is represented by a binary vector.

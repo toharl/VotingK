@@ -1,9 +1,9 @@
 1. get_odata.py
 
-The Parliament have a service to retrieve the data named ODATA.
+The Parliament has a service to retrieve the data named ODATA.
 Here I used this service and extracted the relevant data to a csv file.
 
-The votes.csv consist of the data as is -- the votes for each law by each member. 7057 laws X 143 members.
+The votes.csv consists of the data as is -- the votes for each law by each member. 7057 laws X 143 members.
 The values of the vote results are 0 ,1, 2, 3, 4. Where 1 - for the law, 2 - opposed to the law, 3 - abstained, 0 - didn’t attend. 4 - I don’t know.
 
 2. create_csv.py
