@@ -13,10 +13,10 @@ print(res)
 # save in a txt:
 import os
 i = 0
-while os.path.exists("lp_outputest(%s).txt" % i):
+while os.path.exists("scipylp(%s).txt" % i):
     i += 1
 
-with open("lp_outputest(%s).txt" % i, "w") as text_file:
+with open("scipylp(%s).txt" % i, "w") as text_file:
     print(f"Date and Time': {datetime.datetime.now()}", file=text_file)
     print(f"Parameters: method='interior-point'. \n Output\n: {res}", file=text_file)
 
