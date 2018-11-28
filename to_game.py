@@ -26,9 +26,8 @@ def is_zeroes(x):
 def majority(x):
     new_x=[]
     new_x[:] = (value for value in x if value != 0) # trim the zeroes
-    #todo: uncomment -- trim the 3s or 4s
-    #new_x[:] = (value for value in x if value != 3)
-    #new_x[:] = (value for value in x if value != 4)
+    new_x[:] = (value for value in new_x if value != 3)
+    new_x[:] = (value for value in new_x if value != 4)
     occrs = Counter(new_x).most_common(2)
     #print (occrs)
     #if len(occrs)==0: return 2
