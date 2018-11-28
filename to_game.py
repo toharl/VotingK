@@ -39,19 +39,15 @@ def majority(x):
 # x = [0,0,0]
 # print (majority(x))
 
-def to_sets(items): #todo -- maybe remove the set0?
-    set0 = [1 if x == 0 else 0 for x in items]
+def to_sets(items):
     set1 = [1 if x == 1 else 0 for x in items]
     set2 = [1 if x == 2 else 0 for x in items]
-    return set0, set1, set2
+    return set1, set2
 
 #x = [0,0,0]
 def to_set_and_value(A,b,x):
     m = majority(x)
-    set0, set1, set2 = to_sets(x)
-
-    # b.append(0)
-    # A.append(set0)
+    set1, set2 = to_sets(x)
 
     v1 = 1 if m == 1 else 0
     b.append(v1)
