@@ -22,7 +22,7 @@ def count_partic(laws, members):
 
        for k,v in members.items():
               v['took_part']=v['took_part']/len(laws)
-       print('members','\n', members)
+       #print('members','\n', members)
        return members
 
 
@@ -36,7 +36,7 @@ def count_won(laws, members):
 
        for k, v in members.items():
               v['won'] = v['won'] / len(laws)
-       print('members', '\n', members)
+       #print('members', '\n', members)
        return members
 
 laws = helper.load_pickle('laws.pickle')
@@ -47,16 +47,11 @@ count_partic(laws, members)
 
 
 for i in members:
-    print(members[i]['kmmbr_name'],members[i]['faction_name'])
+    #print(members[i]['kmmbr_name'],members[i]['faction_name'])
     names.append(members[i]['kmmbr_name'])
     faction.append(members[i]['faction_name'])
     part.append(members[i]['took_part'])
     #won.append(members[i]['won'])
-
-# pearson=[None]*143
-# pearson[0] = scipy.stats.pearsonr(x,part)
-# pearson[1] = 'sum x:'
-# pearson[2] = sum(x)
 
 
 
@@ -66,7 +61,12 @@ df = pd.DataFrame.from_dict(data)
 df.to_csv('payoff.csv')
 print("new payoff.csv has created")
 
-print(df)
+#print(df)
+
+print()
+pearson = scipy.stats.pearsonr(x1,part)
+print("(pearson correlation , p-value)")
+print(pearson)
 
 
 
