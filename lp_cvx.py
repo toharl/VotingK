@@ -30,6 +30,8 @@ def cvxopt_solve_min(b, A, solver=None):
     sol = cvxopt.solvers.lp(c, G, h, solver=solver)
     x = np.array(sol['x'])
     x = list(map(lambda i: i[0], x))
+
+    print ('status:',sol['s'], 'optimal sol:', sol["primal objective"])
     return x
 
 x = cvxopt_solve_min(b, A, solver=None)
