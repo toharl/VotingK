@@ -11,7 +11,7 @@ Becuase the data is too big, we get only the first chunk of the data with a fiel
 
 We have to perform paging.
 
-Here we use pyslet library that perform paging for us and parsing the ODATA xml.
+Here we use pyslet library that performs paging for us and parses the ODATA xml.
 
 The outputs are:
 'laws.pickle' - structure is {<vote_id>: { "kmmbrs2votes": <kmmbr_id>: <vote_result>}}
