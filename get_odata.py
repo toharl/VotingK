@@ -22,6 +22,12 @@ laws.pickle is the actual voting results -- for each voting we have the vote_res
 kmmrs.pickle helps to get the hebrew name of the knesset member (for later use).
 
 
+useful links:
+http://knesset.gov.il/Odata/ 
+http://knesset.gov.il/Odata/ParliamentInfo.svc/ 
+documentations -- https://main.knesset.gov.il/Activity/Info/Pages/Databases.aspx
+
+
 '''
 
 import helper
